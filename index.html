@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto Fiume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Progetto Fiume</h1>
+        <nav>
+            <a href="#progetto">Progetto</a>
+            <a href="#luoghi">Luoghi</a>
+            <a href="#batteri">Batteri</a>
+            <a href="#foto">Foto</a>
+            <a href="#chi-siamo">Chi Siamo</a>
+            <a href="#ringraziamenti">Ringraziamenti</a>
+        </nav>
+    </header>
+    
+    <div class="hero">
+        <h2>Monitoriamo la qualità del nostro fiume</h2>
+    </div>
+    
+    <div class="mappa">
+        <div class="punto verde" style="top: 50px; left: 100px;" onclick="showInfo(event, 'Acqua pulita')"></div>
+        <div class="punto giallo" style="top: 120px; left: 200px;" onclick="showInfo(event, 'Qualità media')"></div>
+        <div class="punto rosso" style="top: 200px; left: 300px;" onclick="showInfo(event, 'Acqua inquinata')"></div>
+    </div>
+    
+    <div class="descrizione">
+        <p>Il nostro progetto mira a monitorare la qualità dell'acqua del fiume, rilevando la presenza di batteri e altre sostanze inquinanti.</p>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Il tuo browser non supporta il tag video.
+        </video>
+    </div>
+    
+    <div class="foto">
+        <img src="fase1.jpg" alt="Fase 1">
+        <img src="fase2.jpg" alt="Fase 2">
+        <img src="fase3.jpg" alt="Fase 3">
+    </div>
+    
+    <script>
+        function showInfo(event, text) {
+            alert(text);
+        }
+    </script>
+</body>
+</html>
 
