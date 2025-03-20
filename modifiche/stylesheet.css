@@ -1,0 +1,118 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Color Palette */
+:root {
+    --dark-bg: #0B0C10;
+    --medium-dark: #1F2833;
+    --light-gray: #C5C6C7;
+    --accent-blue: #66FCF1;
+    --accent-teal: #45A29E;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--light-gray);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: var(--medium-dark);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--accent-blue);
+    margin-left: 20px;
+}
+
+nav {
+    margin-right: 20px;
+}
+
+nav a {
+    color: var(--light-gray);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--accent-blue);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 50%;
+    max-width:80% ;
+    background: url('background-image.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .overlay {
+    background: rgba(11, 12, 16, 0.7);
+    padding: 30px;
+    color: var(--accent-blue);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Project Section */
+.introduzione {
+    padding: 50px;
+    background: var(--medium-dark);
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.introduzione h2 {
+    color: var(--accent-blue);
+}
+
+.introduzione video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+/* Gallery */
+.galleria {
+    padding: 50px;
+}
+
+.foto-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.foto-container img {
+    width: 30%;
+    max-width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.foto-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: var(--medium-dark);
+    padding: 20px;
+    font-size: 0.9rem;
+}
