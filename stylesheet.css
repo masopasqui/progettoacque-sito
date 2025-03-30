@@ -53,7 +53,8 @@ nav a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 80vh;
+    height: 50%;
+    max-width:80% ;
     background: url('background-image.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
