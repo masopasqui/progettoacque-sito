@@ -1,20 +1,20 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* Color Palette */
+/* Color Palette - Minimalist Earth Tones */
 :root {
-    --dark-bg: #0B0C10;
-    --medium-dark: #1F2833;
-    --light-gray: #C5C6C7;
-    --accent-blue: #66FCF1;
-    --accent-teal: #45A29E;
+    --dark-bg: #2D2D2A;
+    --warm-beige: #E0CCBE;
+    --muted-sage: #A4B494;
+    --soft-white: #F4EAE6;
+    --text-color: #E0CCBE;
 }
 
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--dark-bg);
-    color: var(--light-gray);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
     text-align: center;
@@ -22,7 +22,7 @@ body {
 
 /* Header */
 header {
-    background: var(--medium-dark);
+    background: var(--warm-beige);
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,7 @@ header {
 }
 
 header h1 {
-    color: var(--accent-blue);
+    color: var(--dark-bg);
     margin-left: 20px;
 }
 
@@ -39,7 +39,7 @@ nav {
 }
 
 nav a {
-    color: var(--light-gray);
+    color: var(--dark-bg);
     text-decoration: none;
     margin: 0 15px;
     font-weight: 600;
@@ -47,24 +47,25 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent-blue);
+    color: var(--muted-sage);
 }
 
 /* Hero Section */
 .hero {
     position: relative;
-    height: 50%;
-    max-width:80% ;
-    background: url('background-image.jpg') no-repeat center center/cover;
+    height: 80vh;
+    max-width: 100%;
+    background: url('media/fiume_aterno.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .hero .overlay {
-    background: rgba(11, 12, 16, 0.7);
+    background: rgba(45, 45, 42, 0.7);
     padding: 30px;
-    color: var(--accent-blue);
+    color: var(--soft-white);
     font-size: 2.5rem;
     font-weight: bold;
 }
@@ -72,13 +73,14 @@ nav a:hover {
 /* Project Section */
 .introduzione {
     padding: 50px;
-    background: var(--medium-dark);
+    background: var(--warm-beige);
     border-radius: 10px;
     margin: 50px;
+    color: var(--dark-bg);
 }
 
 .introduzione h2 {
-    color: var(--accent-blue);
+    color: var(--dark-bg);
 }
 
 .introduzione video {
@@ -112,7 +114,8 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background: var(--medium-dark);
+    background: var(--warm-beige);
     padding: 20px;
     font-size: 0.9rem;
+    color: var(--dark-bg);
 }
