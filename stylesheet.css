@@ -108,10 +108,10 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('media/fiume_aterno.jpg'); /* Sostituisci con il percorso della tua immagine */
-    background-size: cover; /* Ridimensiona l'immagine per coprire l'area */
-    background-position: center; /* Centra l'immagine */
-    z-index: 1; /* Assicura che sia dietro l'overlay */
+    background-image: url('media/fiume_aterno.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    z-index: 1; 
 }
 
 .hero .overlay {
