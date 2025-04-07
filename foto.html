@@ -3,32 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le foto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Monitoraggio Fiume Aterno</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <style>
+        .gallery img {
+            width: 100%;
+            height: 180px; /* Imposta un'altezza fissa per le anteprime */
+            object-fit: cover; /* Ritaglia o adatta l'immagine mantenendo le proporzioni */
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Monitoraggio Fiume Aterno</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="progetto.html">Il Progetto</a>
-            <a href="esiti.html">Gli Esiti</a>
-            <a href="luoghi.html">I Luoghi</a>
-            <a href="batteri.html">I Batteri</a>
-            <a href="foto.html">Le Foto</a>
-            <a href="chi-siamo.html">Chi Siamo</a>
-            <a href="ringraziamenti.html">Ringraziamenti</a>
-        </nav>
-    </header>
+    <div class="wrapper">
+        <header>
+            <h1>Monitoraggio Fiume Aterno</h1><BR>
+            <div style="text-align:center;">
+                <nav class="navbar navbar-expand-lg navbar-dark my-custom-navbar-color">
+                    <div class="container-fluid">
 
-    <section>
-        <h2>Le foto</h2>
-        <p>Questa pagina conterrà una galleria fotografica del progetto.</p>
-    </section>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-    <footer>
-        <p>&copy; 2025 Monitoraggio Fiume Aterno - Tutti i diritti riservati</p>
-    </footer>
+                        <div class="collapse navbar-collapse" id="navbarContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="progetto.html">Progetto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="esiti.html">Esiti</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="luoghi.html">Luoghi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="batteri.html">Batteri</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="foto.html">Foto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="chi-Siamo.html">Chi⠀Siamo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ringraziamenti.html">Ringraziamenti</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="accedi.html">
+                                        <img src="media/accedi.png" alt="Accedi" style="width: 40px; height: auto;">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            </header>
+            <br>
+            <h2 class="video-title">Un'escursione nelle Grotte di Stiffe</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="media/video_progetto.mov" type="video/mp4">
+                    Il tuo browser non supporta il tag video.
+                </video>
+            </div>
+
+        <section class="photo-section" id="laboratorio">
+            <br>
+            <h2>Foto in Laboratorio</h2>
+            <div class="gallery">
+                <a data-fancybox="laboratorio" href="media/galleria-foto/lab1.jpg">
+                    <img src="media/galleria-foto/lab1.jpg" alt="Foto laboratorio 1">
+                </a>
+                <a data-fancybox="laboratorio" href="media/galleria-foto/lab2.jpg">
+                    <img src="media/galleria-foto/lab2.jpg" alt="Foto laboratorio 2">
+                </a>
+
+                <a data-fancybox="laboratorio" href="media/galleria-foto/lab3.jpg">
+                    <img src="media/galleria-foto/lab3.jpg" alt="Foto laboratorio 3">
+                </a>
+
+                <a data-fancybox="laboratorio" href="media/galleria-foto/lab4.jpg">
+                    <img src="media/galleria-foto/lab4.jpg" alt="Foto laboratorio 4">
+                </a>
+                <a data-fancybox="laboratorio" href="media/galleria-foto/lab5.jpg">
+                    <img src="media/galleria-foto/lab5.jpg" alt="Foto laboratorio 5">
+                </a>
+                <a data-fancybox="laboratorio" href="media/galleria-foto/lab6.jpg">
+                    <img src="media/galleria-foto/lab6.jpg" alt="Foto laboratorio 6">
+                </a>
+                <a data-fancybox="laboratorio" href="media/galleria-foto/lab7.jpg">
+                    <img src="media/galleria-foto/lab7.jpg" alt="Foto laboratorio 7">
+                </a>
+            </div>
+        </section>
+
+        <section class="photo-section" id="grotte">
+            <h2>Foto alle Grotte di Stiffe</h2>
+            <div class="gallery">
+                <a data-fancybox="grotte" href="media/galleria-foto/grotte1.jpg">
+                    <img src="media/galleria-foto/grotte1.jpg" alt="Foto grotte 1">
+                </a>
+                <a data-fancybox="grotte" href="media/galleria-foto/grotte2.jpg">
+                    <img src="media/galleria-foto/grotte2.jpg" alt="Foto grotte 2">
+                </a>
+
+                <a data-fancybox="grotte" href="media/galleria-foto/grotte3.jpg">
+                    <img src="media/galleria-foto/grotte3.jpg" alt="Foto grotte 3">
+                </a>
+
+                <a data-fancybox="grotte" href="media/galleria-foto/grotte4.jpg">
+                    <img src="media/galleria-foto/grotte4.jpg" alt="Foto grotte 4">
+                </a>
+                <a data-fancybox="grotte" href="media/galleria-foto/grotte5.jpg">
+                    <img src="media/galleria-foto/grotte5.jpg" alt="Foto grotte 5">
+                </a>
+                <a data-fancybox="grotte" href="media/galleria-foto/grotte6.jpg">
+                    <img src="media/galleria-foto/grotte6.jpg" alt="Foto grotte 6">
+                </a>
+                <a data-fancybox="grotte" href="media/galleria-foto/grotte7.jpg">
+                    <img src="media/galleria-foto/grotte7.jpg" alt="Foto grotte 7">
+                </a>
+            </div>
+        </section>
+
+
+        <footer>
+            <p>&copy; 2025 Monitoraggio Fiume Aterno - Tutti i diritti riservati</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox="laboratorio"]', {
+          // Opzioni specifiche per la galleria "laboratorio" se necessario
+        });
+
+        Fancybox.bind('[data-fancybox="grotte"]', {
+          // Opzioni specifiche per la galleria "grotte" se necessario
+        });
+    </script>
 </body>
 </html>
